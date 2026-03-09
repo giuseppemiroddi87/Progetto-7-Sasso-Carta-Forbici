@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevClub Sasso Carta Forbici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sasso Carta Forbici</h1>
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+            <button id="paper" onclick="playHuman('paper')">&#x1f590;</button>
+            <button id="scissor" onclick="playHuman('scissor')">&#x270c;</button>
+        </div>
+        <p class="result"></p>
+
+        <p class="your-score">Tuo Punteggio: <span id="human-score">0</span></p>
+        <p class="machine-score">Punteggio BOT: <span id="machine-score">0</span></p>
+        
+        <!-- zona vincitore -->
+        <div class="winner-image"></div>
+
+        <!-- bottone reset -->
+        <button id="reset" onclick="resetBtn()">Ricomincia</button>
+
+    </div>
+    <script src="./script2.js"></script>
+</body>
+
+</html>

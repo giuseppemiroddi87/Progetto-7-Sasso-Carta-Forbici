@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://picsum.photos/1920/1080');
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* centra orizzontalmente */
+    align-items: center; /*  centra verticalmente */
+    min-height: 100vh;
+}
+
+.container{
+    padding: 20px;
+    background-color: #ffffff;
+    background: rgba(93, 93, 125, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.winner-image {
+    font-size: 200px;
+    margin: 15px 0;
+}
+
+#reset {
+    display: none;   /* nascosto all'inizio */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #0586F5;
+    font-weight: bold;
+}
+
+
+#rock {
+    background-color: #a200ff;
+}
+
+#paper {
+    background-color: #9ee01a;
+}
+
+#scissor {
+    background-color: #7dbeed;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.your-score span {
+    color:rgb(77, 128, 216)
+}
+
+.machine-score span {
+    color: rgb(224, 71, 15)
+}
